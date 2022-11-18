@@ -3,7 +3,6 @@ package com.celsius.notas;
 // POJO = Plain Old Java Object
 public class Nota {
   // Ctrl + . -> Generar Getters y Setters
-  private String id;
   private String titulo;
   private String contenido;
 
