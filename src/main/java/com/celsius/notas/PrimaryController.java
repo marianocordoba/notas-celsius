@@ -17,7 +17,7 @@ public class PrimaryController {
 
   @FXML
   private TextField textoTitulo;
-  
+
   @FXML
   private TextArea textoContenido;
 
@@ -27,11 +27,10 @@ public class PrimaryController {
   @FXML
   void salir(ActionEvent event) {
     Alert confirmacion = new Alert(
-      AlertType.CONFIRMATION,
-      "¿Está seguro de que desea salir?",
-      new ButtonType("Cancelar"),
-      new ButtonType("Salir")
-    );
+        AlertType.CONFIRMATION,
+        "¿Está seguro de que desea salir?",
+        new ButtonType("Cancelar"),
+        new ButtonType("Salir"));
     // Modificamos el título y texto de cabecera del Alert
     confirmacion.setTitle("Confirmación");
     confirmacion.setHeaderText("Confirmación");
@@ -60,7 +59,7 @@ public class PrimaryController {
     // programa.
 
     // Ej: Celsius Notas v1.0
-    //     Desarrollado por Mariano Córdoba
+    // Desarrollado por Mariano Córdoba
   }
 
   @FXML
