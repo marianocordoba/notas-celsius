@@ -9,8 +9,13 @@ public class Nota {
   private String titulo;
   private String contenido;
 
-  public Nota(String titulo, String contenido) {
-    this.id = UUID.randomUUID().toString();
+  public Nota(String id, String titulo, String contenido) {
+    if (id == null) {
+      this.id = UUID.randomUUID().toString();
+    } else {
+      this.id = id;
+    }
+
     this.titulo = titulo;
     this.contenido = contenido;
   }

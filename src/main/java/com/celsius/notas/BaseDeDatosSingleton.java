@@ -5,7 +5,7 @@ public class BaseDeDatosSingleton {
     private IBaseDeDatos bd;
 
     private BaseDeDatosSingleton() {
-        bd = new BaseDeDatosMemoria();
+        bd = new BaseDeDatosSQL();
     }
 
     public static BaseDeDatosSingleton getInstancia() {
